@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overdue {
+    background-color: #ffcccc;
+    border-left: 5px solid #ff0000;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.btn.active {
+    color: white !important;
+    background-color: var(--bs-btn-hover-bg) !important;
+    border-color: var(--bs-btn-hover-border) !important;
+}
+
+.d-flex.flex-wrap {
+    justify-content: center; 
+}
+
+#todoList li {
+    margin-bottom: 4px;  
+    
+    border: 2px solid #ccc; 
+    transition: all 0.3s ease-in-out; 
+}
+
+#todoList li.completed {
+    border-color: #28a745; 
+}
+
+#todoList li.overdue {
+    border-color: #dc3545; 
+}
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
